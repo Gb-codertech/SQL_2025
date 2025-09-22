@@ -1,0 +1,11 @@
+Clientes - Faturas (1 - 1)
+Um cliente só pode ter uma fatura
+
+Clientes - Produtos (1 - n)
+Um cliente pode comprar vários produtos
+
+Funcionários - Clientes (1 - 1)
+Um funcionário só pode atender um cliente de uma vez
+
+Produtos - Faturas (n - n)
+Vários produtos podem estar em várias faturas
