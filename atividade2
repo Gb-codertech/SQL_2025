@@ -1,0 +1,8 @@
+Cliente ---< Produtos
+Produtos >--- Cliente
+
+Cliente ---< Fatura
+Fatura >--- Cliente
+
+Produtos >---< Fatura
+Fatura >---< Produtos
