@@ -1,0 +1,11 @@
+FK - Alunos:
+  (PK - id_aluno, nome, data_nascimento, morada, FK - curso);
+
+FK - Funcionários:
+  (PK - id_funcionario, nome, departamento, Candidata - telefone);
+
+Professores:
+  (PK - id_professor, name, especialidade, Candidata - telefone, Candidata - email, Candidata - id_funcionario);
+
+Cursos:
+  (PK - id_curso, nome, carga_horaria);
