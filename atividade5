@@ -1,0 +1,31 @@
+                                Base de dados: Escola
+
+Foreign Key (FK): Alunos
+
+  - ID do Aluno
+  - Nome
+  - Idade
+  - Curso
+  - Morada
+  - Encarregado de educação
+
+FK: Professores
+
+  - Nome
+  - Disciplina
+  - Morada
+  - Contato
+  - Email
+
+FK: Cursos
+
+  - ID do Curso
+  - Nome
+  - Número
+  - Diretor de Curso
+
+FK: Funcionários
+
+  - Nome
+  - Contato
+  - Email
