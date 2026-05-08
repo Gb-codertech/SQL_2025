@@ -1,0 +1,47 @@
+CREATE DATABASE Marval;
+USE Marval;
+CREATE TABLE Marinheiro(
+ N_Marinheiro INT PRIMARY KEY,
+Nome_Marinheiro VARCHAR(20),
+Grau INT,
+Idade INT
+);
+
+CREATE TABLE Barco(
+N_Barco INT PRIMARY KEY,
+Nome_Barco VARCHAR(30),
+Cor VARCHAR(30)
+);
+
+CREATE TABLE Reservas(
+CONSTRAINT N_Barco
+    FOREIGN KEY (N_Barco)
+    REFERENCES Barco(N_Barco),
+CONSTRAINT N_Marinheiro
+    FOREIGN KEY (N_Marinheiro)
+    REFERENCES Marinheiro(N_Marinheiro),
+Data DATE
+);
+
+DROP TABLE Reservas;
+SELECT * FROM Barco;
+
+INSERT INTO Marinheiro
+VALUES
+(001, 'Paulo', 5, 36),
+(002, 'Luis', 8, 27),
+(003, 'Marco', 6, 35),
+(004, 'Rafael', 10, 45),
+(005, 'Henrique', 7, 35),
+(006, 'Manuel', 10, 46);
+
+INSERT INTO Barco
+VALUES
+(100, 'Lua', 'Branco'),
+(200, 'Interlago', 'Verde'),
+(300, 'Sol', 'Amarelo'),
+(400, 'Terra', 'Castanho'),
+(500, 'Saturno', 'Azul'),
+(600, 'Júpiter', 'Vermelho');
+
+INSERT INTO Reservas
